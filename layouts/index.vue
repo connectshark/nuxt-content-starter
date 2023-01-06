@@ -12,7 +12,12 @@
       <h2>Author: {{ config.site.author }}</h2>
       <p>Useful Link</p>
       <p>
-        
+        <a href="https://github.com/connectshark/nuxt-content-starter" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-github bx-md'></i>
+        </a>
+        <a href="https://github.com/connectshark" target="_blank" rel="noopener noreferrer">
+          <i class='bx bx-user bx-md'></i>
+        </a>
       </p>
     </div>
   </footer>
