@@ -1,5 +1,14 @@
 {
   "name": "nuxt-content-starter",
+  "description": "a simple Nuxt content template",
+  "author": {
+    "name": "Chambers",
+    "url": "https://github.com/connectshark"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/connectshark/nuxt-content-starter"
+  },
   "scripts": {
     "dev": "nuxt dev",
     "generate": "nuxt generate",
