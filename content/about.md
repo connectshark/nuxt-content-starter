@@ -1,3 +1,3 @@
-# About Content v2
+# About Content
 
 [Back home](/)
