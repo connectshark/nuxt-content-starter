@@ -1,12 +1,31 @@
 <template>
-<HeaderWrapper/>
 <main>
-  <div class=" mx-auto max-w-4xl w-11/12">
-    <slot/>
+  <div class=" mx-auto max-w-6xl w-11/12">
+    <section class="pt-10 pb-20">
+      <slot name="hero"/>
+    </section>
+    <div class=" grid lg:grid-cols-10 gap-10 mb-10">
+    <section class=" col-span-7">
+      <slot/>
+    </section>
+    <section class=" col-span-3">
+      <div>
+        <NuxtLink
+          class="inline-block align-middle px-2 py-1 m-1 rounded-lg ring-1 ring-primary-200 hover:bg-primary hover:text-white transition"
+          v-for="tag in tagList"
+          :key="tag"
+          :to="`/tags/${tag}`"
+        >{{ tag }}</NuxtLink>
+      </div>
+      <div>
+        <iframe class=" w-full" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100079569469057&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=276725514699587" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+    </section>
+    </div>
   </div>
 </main>
-<FooterWrapper/>
 </template>
 
 <script setup>
+const tagList = useState('tagList')
 </script>

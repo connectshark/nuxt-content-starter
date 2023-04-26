@@ -22,7 +22,8 @@ export default defineNuxtConfig({
     }
   },
   content: {
-    defaultLocale: 'zh-TW'
+    defaultLocale: 'zh-TW',
+    documentDriven: true
   },
   tailwindcss: {
     viewer: false,

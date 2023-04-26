@@ -1,6 +1,6 @@
 <template>
-<footer class=" bg-primary/30">
-  <div class="mx-auto w-11/12 py-6 max-w-4xl">
+<footer class=" bg-primary-800 text-white">
+  <div class="mx-auto w-11/12 py-6 max-w-6xl">
     <h2>Author: {{ config.site.author }}</h2>
     <p>Useful Link</p>
     <p>

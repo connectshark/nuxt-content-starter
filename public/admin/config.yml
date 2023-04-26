@@ -15,8 +15,17 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: title, widget: string }
-      - { label: 'Publish Date', name: date, widget: datetime }
-      - { label: 'Featured Image', name: cover, widget: image, required: false }
-      - { label: 'Description', name: description, widget: string }
-      - { label: 'Body', name: body, widget: markdown }
+      - { label: '文章標題', name: title, widget: string }
+      - { label: '文章時間', name: date, widget: datetime }
+      - { label: '封面圖片', name: cover, widget: image, required: false }
+      - { label: '文章說明文字', name: description, widget: string }
+      - label: '內文'
+        name: body
+        widget: markdown
+      - label: '標籤'
+        name: tags
+        widget: list
+      - label: '作者'
+        name: author
+        widget: select
+        options: ['Chambers', 'Sandra']
