@@ -2,7 +2,7 @@
 <div class=" font-ubuntu bg-primary-50">
   <HeaderWrapper/>
   <NuxtPage />
-  <section class="py-20 hero-bg bg-cover bg-center"></section>
+  <div class="py-20 hero-bg bg-cover bg-center"></div>
   <FooterWrapper/>
 </div>
 </template>

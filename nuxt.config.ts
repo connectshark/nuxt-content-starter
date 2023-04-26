@@ -1,3 +1,5 @@
+const SITE_NAME = 'Nuxt Content Starter'
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
@@ -6,7 +8,12 @@ export default defineNuxtConfig({
   app: {
     rootId: 'app',
     head: {
-      title: 'Nuxt Content Starter',
+      title: SITE_NAME,
+      meta: [
+        { name: 'description' , content: 'Nuxt Content for starter'},
+        { hid: 'og-type', property: 'og:type', content: 'website' },
+        { hid: 'og-title', property: 'og:title', content: SITE_NAME },
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/nosegates.jpg' },
         { rel: 'stylesheet', href: 'https://unpkg.com/boxicons@latest/css/boxicons.min.css' },
