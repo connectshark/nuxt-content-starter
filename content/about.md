@@ -1,6 +1,7 @@
 ---
 title: What is Discord
 date: 2023-04-26 10:00:00
+cover: /img/aboutdiscordcover.png
 description: About Discord
 tags:
   - food
