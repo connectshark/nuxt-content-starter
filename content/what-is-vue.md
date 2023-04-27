@@ -8,13 +8,17 @@ tags:
   - post
 author: Chambers
 ---
-#﻿# Vue is a progressive framework
+## Vue is a progressive framework
 
 Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. Vue is also perfectly capable of powering sophisticated single-page applications when used in combination with modern tooling and supporting libraries.
 
+### blog post
+
+
+
 In this blog post, I will introduce some of the main features and benefits of Vue, and show you how to get started with this amazing framework. Whether you are a beginner or an experienced developer, Vue has something for everyone.
 
-#﻿# based on a simple idea
+## based on a simple idea
 
 Vue is based on a simple idea: data-driven components. A component is a reusable piece of UI that can contain HTML, CSS, JavaScript, or any other web technology. A component can have its own data, methods, computed properties, watchers, lifecycle hooks, and even other components. A component can also accept props from its parent component, and emit custom events to communicate with its parent or siblings.
 
@@ -29,8 +33,9 @@ Vue also supports a template syntax that allows you to write HTML-like code with
 Vue also offers a number of tools and libraries that enhance its core functionality and make it easier to develop complex applications. For example, you can use Vue Router to manage routing and navigation, Vuex to manage state and data flow, Vue CLI to scaffold and build your project, Vue Devtools to debug and inspect your app, and many more.
 
 As you can see, Vue is a versatile and powerful framework that can help you create amazing user interfaces with ease. If you want to learn more about Vue, you can visit its official website at https://vuejs.org/, where you will find documentation, tutorials, examples, and more.
-#﻿# End
-I hope you enjoyed this blog post and found it useful. If you have any questions or feedback, feel free to leave a comment below. Thank you for reading!
+
+## 
+End
 
 
-
+I hope you enjoyed this blog post and found it useful. If you have any questions or feedback, feel free to leave a comment below. Thank you for reading
