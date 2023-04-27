@@ -26,7 +26,7 @@
 
 <script setup>
 const config = useAppConfig()
-const contentQuery = await queryContent().sort({ date: 1 }).only(['title', 'cover', 'description', '_path', '_id']).limit(3).find()
+const contentQuery = await queryContent().sort({ date: 1 }).only(['title', 'cover', 'description', '_path', '_id']).limit(6).find()
 useHead({
   title: config.site.title,
 })

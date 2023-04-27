@@ -1,12 +1,12 @@
+# Nuxt Content Starter
+This is a template for a blog using Nuxt.js and Netlify CMS.
+
 ![](/readme/cover.png)
-
-# Welcome Nuxt Content Starter
-
 [中文版](/readme/zh-tw.md)
 
-This project is specifically for markdown editors. Because none of the templates provided by Nuxt have ready for markdown editors creating,this project had set up you need already.
+The project is a static website that integrates Netlify CMS, allowing users to add, edit, and delete articles through a simple and easy-to-use management interface, and can also use Markdown to write articles.
 
-## 目錄
+## Table of Contents
 
 - [What in this project](#what-in-this-project)
 - [Ready to Development](#ready-to-development)
@@ -15,16 +15,21 @@ This project is specifically for markdown editors. Because none of the templates
 
 ## What in this project
 
-- @nuxt/content
-- @nuxtjs/tailwindcss
-- nuxt
-- sitemap
+- `@nuxt/content`
+- `@nuxtjs/tailwindcss`
+- `nuxt`
+- `sitemap`
+- `Netlify CMS`
 
 ## Ready to Development
 
 click `Use this template` button or click [here](https://github.com/connectshark/nuxt-content-starter/generate)
 
-### Preparation
+or you can use Git to clone the repository.
+```
+git@github.com:connectshark/nuxt-content-starter.git
+```
+### Before development
 
 Follow [Doc](https://nuxt.com/docs/getting-started/installation#prerequisites)
 
@@ -51,15 +56,19 @@ npm run generate
 Upload contents in `.output/public`
 
 
-## Deploy to Render
+## One-Click Deployment
 
-If you have Render.com account, deploy this project by clicking this button immediately.
+### Deploy to Render
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
 **Setup will remind you that web service plan is starter by default, but this is a static site actually when deployed**
 
-## Useful Document
+### Deploy to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/connectshark/nuxt-content-starter)
+
+## Useful documentation
 
 - [Content | Nuxt](https://content.nuxtjs.org/)
 

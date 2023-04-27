@@ -1,13 +1,10 @@
-![](/readme/cover.png)
-
 # Nuxt Content Starter
+Nuxt + Netlify CMS 部落格模板
 
+![](/readme/cover.png)
 [EN](../README.md)
 
-這專案專門為了那些markdown編輯者所生
-目前官方提供的模板皆尚未達成開箱即用
-所以本專案單純把`Nuxt`中**內容編輯**所需的每個套件給安裝好
-為了達成開箱即編輯的地步
+這是一個使用了 `Nuxt.js` 和 `Netlify CMS` 的部落格模板。本專案使用了靜態網站，並且整合了 Netlify CMS，讓使用者可以透過一個簡單易用的管理介面來新增、修改、刪除文章，也可使用 Markdown 撰寫文章。
 
 ## 目錄
 
@@ -16,19 +13,23 @@
 - [一鍵部署至render](#一鍵部署至render)
 - [有用的文檔](#有用的文檔)
 
-## 專案已包含內容
+## 專案核心內容
 
-- @nuxt/content
-- @nuxtjs/tailwindcss
-- nuxt
-- sitemap
+- `@nuxt/content`
+- `@nuxtjs/tailwindcss`
+- `nuxt`
+- `sitemap`
+- `Netlify CMS`
 
-已安裝內容即為**內容編輯**所需，包含UI框架和靜態內容所需`sitemap`等等
 
 ## 如何使用
 
-可以點擊右上方`Use this template`或點擊這裡的[Use this template](https://github.com/connectshark/nuxt-content-starter/generate)
+可以點擊右上方`Use this template`或點擊這裡的[Use this template](https://github.com/connectshark/nuxt-content-starter/generate)直接開始專案
 
+或是可以選擇git的方式
+```
+git@github.com:connectshark/nuxt-content-starter.git
+```
 ### 開發前準備
 
 可以參考[官方文件](https://nuxt.com/docs/getting-started/installation#prerequisites)
@@ -56,13 +57,19 @@ npm run generate
 生產完成以後將`.output/public`部署至指定的靜態空間上即可
 
 
-## 一鍵部署至render
+## 一鍵部署
 
+
+### 部署至render.com
 若你有render帳號，點擊按鈕即可立即部署此專案
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
 **安裝時會提醒被提醒services的方案預設為starter，但這實際上部署時是靜態網站**
+
+### 部署至netflify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/connectshark/nuxt-content-starter)
 
 ## 有用的文檔
 
