@@ -34,8 +34,7 @@ Vue also offers a number of tools and libraries that enhance its core functional
 
 As you can see, Vue is a versatile and powerful framework that can help you create amazing user interfaces with ease. If you want to learn more about Vue, you can visit its official website at https://vuejs.org/, where you will find documentation, tutorials, examples, and more.
 
-## 
-End
+## End
 
 
 I hope you enjoyed this blog post and found it useful. If you have any questions or feedback, feel free to leave a comment below. Thank you for reading

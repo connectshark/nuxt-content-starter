@@ -44,6 +44,5 @@
 </template>
 
 <script setup>
-const { page } = useContent()
-const { toc, prev, next } = useContent()
+const { toc, prev, next, page } = useContent()
 </script>
