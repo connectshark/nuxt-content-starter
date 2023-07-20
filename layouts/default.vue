@@ -13,7 +13,7 @@
   <ul class="bx-ul max-w-2xl w-4/5 mx-auto py-10">
     <li v-for="heading in toc.links" :key="heading.id">
       <i class='bx bxs-circle text-stone-300'></i>
-      <a class=" text-primary underline leading-loose" :href="'#' + heading.text">{{ heading.text }}</a>
+      <a class=" text-primary underline leading-loose" :href="'#' + heading.id">{{ heading.text }}</a>
       <template v-if="heading.children">
         <ul class="bx-ul">
           <li v-for="child in heading.children" :key="child.id"><i class='bx bx-circle text-stone-300' ></i>

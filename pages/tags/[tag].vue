@@ -7,7 +7,7 @@
       <li v-for="article in articles">
         <NuxtLink class="block p-5 bg-white hover:-translate-y-2" :to="article._path">
           <figure v-if="article.cover">
-            <img class=" h-44 object-cover" :src="article.cover" alt="cover">
+            <img class="aspect-video w-full" :src="article.cover" alt="cover">
           </figure>
           <div v-else class="bg-primary-300">
             <p class=" text-center leading-[11rem]">no image</p>
