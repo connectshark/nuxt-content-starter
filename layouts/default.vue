@@ -2,7 +2,7 @@
 <main class=" min-h-screen">
   <div class="text-center  bg-center bg-no-repeat bg-cover" :style="`background-image: url(${page.cover});`">
     <div class="backdrop-blur bg-white/50">
-      <h1 class=" py-32 font-bold text-5xl max-w-2xl mx-auto">{{ page.title }}</h1>
+      <h1 class=" w-11/12 py-32 font-bold text-5xl max-w-2xl mx-auto">{{ page.title }}</h1>
     </div>
   </div>
   <ul class=" text-center">
@@ -22,14 +22,14 @@
         </template>
       </li>
     </ul>
-  <article class="w-11/12 mb-20 prose mx-auto max-w-2xl">
+  <article class="w-11/12 mb-20 prose mx-auto max-w-2xl prose-code:px-1 prose-code:rounded-sm prose-code:before:content-[''] prose-code:after:content-[''] prose-code:bg-slate-200">
     <slot/>
   </article>
   <div class="w-11/12 mx-auto max-w-2xl mb-20 bg-primary-700 text-white gap-4 p-10 rounded-3xl grid lg:grid-cols-2">
     <h3>{{ page.author }}</h3>
     <p>Hi! I'm a Frontend developer.High Level experience in web development knowledge, producing quality work.</p>
     <p>
-      <a href='https://ko-fi.com/X8X8G7OLQ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+      <a class=" inline-block align-middle" href='https://ko-fi.com/X8X8G7OLQ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
     </p>
   </div>
   <nav class="w-11/12 mx-auto max-w-2xl">

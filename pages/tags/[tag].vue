@@ -25,12 +25,13 @@
 
 <script setup>
 const route = useRoute()
+const app = useAppConfig()
 const articles = await queryContent()
   .where({ tags: { $in: route.params.tag } })
   .only(['_id', '_path', 'cover', 'title', 'description'])
   .find()
 useHead({
   title: `包含${ route.params.tag }的文章`,
-  titleTemplate: title => `${title} | Nuxt Content Starter`
+  titleTemplate: title => `${title} | ${app.site.title}`
 })
 </script>
