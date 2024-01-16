@@ -1,37 +1,31 @@
-const SITE_NAME = 'Nuxt Content Starter'
-
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/tailwindcss'
-  ],
+  devtools: { enabled: true },
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+  nitro: { prerender: { routes: ['/sitemap.xml'] } },
+  experimental: { payloadExtraction: false },
   app: {
     rootId: 'app',
     head: {
-      title: SITE_NAME,
+      htmlAttrs: {
+        lang: 'zh-TW'
+      },
       meta: [
         { name: 'description' , content: 'Nuxt Content for starter'},
         { hid: 'og-type', property: 'og:type', content: 'website' },
-        { hid: 'og-title', property: 'og:title', content: SITE_NAME },
+        { hid: 'og-title', property: 'og:title', content: 'Nuxt Content for starter' },
+        { hid: 'og-description', property: 'og:description', content: 'Nuxt Content for starter' },
+        { hid: 'og-image', property: 'og:image', content: '/og-image.png' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/nosegates.jpg' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'stylesheet', href: 'https://unpkg.com/boxicons@latest/css/boxicons.min.css' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Ubuntu:wght@400;500;700&display=swap' }
-      ]
-    }
-  },
-  nitro: {
-    preset: 'service-worker',
-    prerender: {
-      routes: ['/sitemap.xml']
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Poppins:wght@400;700&display=swap' }
+      ],
     }
   },
   content: {
-    defaultLocale: 'zh-TW',
-    documentDriven: true
+    documentDriven: true,
+    defaultLocale: 'zh-TW'
   },
-  tailwindcss: {
-    viewer: false,
-  }
+  tailwindcss: { viewer: false }
 })

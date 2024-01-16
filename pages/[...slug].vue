@@ -1,28 +1,25 @@
 <template>
-  <NuxtLayout>
-    <ContentDoc>
-      <template #not-found>
-        <h1>沒有文章</h1>
-        <p>
-          <NuxtLink to="/">回首頁</NuxtLink>
-        </p>
-      </template>
-      <template #empty>
-        <h1>空的</h1>
-        <p>
-          <NuxtLink to="/">回首頁</NuxtLink>
-        </p>
-      </template>
-    </ContentDoc>
-  </NuxtLayout>
+<ClientOnly>
+<Teleport to="#toc">
+  <ul class="bx-ul py-6 sticky top-6 text-gray-400">
+    <li v-for="heading in toc.links" :key="heading.id">
+      <i class='bx bxs-circle bx-x'></i>
+      <a class="text-primary underline" :href="'#' + heading.id">{{ heading.text }}</a>
+      <template v-if="heading.children">
+        <ul class="bx-ul">
+          <li v-for="child in heading.children" :key="child.id"><i class='bx bx-circle' ></i>
+            <a class=" text-primary underline" :href="'#' + child.id">{{ child.text }}</a></li>
+          </ul>
+        </template>
+      </li>
+    </ul>
+</Teleport>
+</ClientOnly>
+<article class="prose prose-a:text-primary mx-auto">
+  <ContentDoc />
+</article>
 </template>
 
 <script setup>
-const { page } = useContent()
-const app = useAppConfig()
-useHead({
-  title: page.title,
-  description: page.description,
-  titleTemplate: title => `${title} | ${app.site.title}`,
-})
+const { toc } = useContent()
 </script>

@@ -4,7 +4,7 @@ import { SitemapStream, streamToPromise } from 'sitemap'
 export default defineEventHandler(async (event) => {
   const docs = await serverQueryContent(event).find()
   const sitemap = new SitemapStream({
-    hostname: 'https://example.com'
+    hostname: 'https://justlikoboss.com'
   })
 
   for (const doc of docs) {

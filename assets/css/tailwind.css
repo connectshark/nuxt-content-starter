@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero-bg {
-  background-image: url('../svg/hero-bg.svg');
+@layer base {
+  :root {
+    --color-primary: 210 111 157;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }

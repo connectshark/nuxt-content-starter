@@ -64,10 +64,6 @@ Upload contents in `.output/public`
 
 **Setup will remind you that web service plan is starter by default, but this is a static site actually when deployed**
 
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/connectshark/nuxt-content-starter)
-
 ## Useful documentation
 
 - [Content | Nuxt](https://content.nuxtjs.org/)
