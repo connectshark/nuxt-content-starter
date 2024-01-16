@@ -10,3 +10,8 @@ This page corresponds to the `/` route of your website. You can delete it or cre
 ## About Content v2
 
 [Back home](/)
+
+
+```js
+太渴怕
+```

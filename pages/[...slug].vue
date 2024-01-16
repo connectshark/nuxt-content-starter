@@ -15,7 +15,7 @@
     </ul>
 </Teleport>
 </ClientOnly>
-<article class="prose prose-a:text-primary mx-auto">
+<article class="prose prose-a:text-primary max-w-none prose-code:before:content-none prose-code:after:content-none">
   <ContentDoc />
 </article>
 </template>

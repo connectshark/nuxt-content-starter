@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     'pages/**/*.vue',
@@ -11,9 +12,10 @@ module.exports = {
         primary: 'rgb(var(--color-primary) / <alpha-value>)'
       },
       fontFamily: {
-        'noto': ['Poppins', 'Noto Sans TC', 'sans-serif']
+        'noto': ['Merriweather', 'Noto Sans TC', 'sans-serif']
       }
-    }
+    },
+    
   },
   plugins: [
     require('@tailwindcss/typography')

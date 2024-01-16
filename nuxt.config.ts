@@ -19,13 +19,16 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'stylesheet', href: 'https://unpkg.com/boxicons@latest/css/boxicons.min.css' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Poppins:wght@400;700&display=swap' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Merriweather:wght@400;700&display=swap' }
       ],
     }
   },
   content: {
     documentDriven: true,
-    defaultLocale: 'zh-TW'
+    defaultLocale: 'zh-TW',
+    highlight: {
+      theme: 'dark-plus'
+    }
   },
   tailwindcss: { viewer: false }
 })
