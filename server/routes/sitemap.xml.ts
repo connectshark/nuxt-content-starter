@@ -4,7 +4,7 @@ import { SitemapStream, streamToPromise } from 'sitemap'
 export default defineEventHandler(async (event) => {
   const docs = await serverQueryContent(event).find()
   const sitemap = new SitemapStream({
-    hostname: 'https://justlikoboss.com'
+    hostname: 'https://nuxt-content-starter.onrender.com'
   })
 
   for (const doc of docs) {
