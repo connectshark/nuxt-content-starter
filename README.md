@@ -1,5 +1,6 @@
 # Nuxt Content Starter
-This is a template for a blog using Nuxt.js and Netlify CMS.
+
+This is a template for a blog using Nuxt and Content.
 
 ![](/readme/cover.png)
 [中文版](/readme/zh-tw.md)
@@ -11,7 +12,7 @@ The project is a static website that integrates Netlify CMS, allowing users to a
 - [What in this project](#what-in-this-project)
 - [Ready to Development](#ready-to-development)
 - [Deploy to Render](#deploy-to-render)
-- [Useful Document](#useful-document)
+- [Useful Document](#useful-documentation)
 
 ## What in this project
 
@@ -19,19 +20,22 @@ The project is a static website that integrates Netlify CMS, allowing users to a
 - `@nuxtjs/tailwindcss`
 - `nuxt`
 - `sitemap`
-- `Netlify CMS`
 
 ## Ready to Development
 
-click `Use this template` button or click [here](https://github.com/connectshark/nuxt-content-starter/generate)
+Click `Use this template` button or click [here](https://github.com/connectshark/nuxt-content-starter/generate)
 
 or you can use Git to clone the repository.
 ```
 git@github.com:connectshark/nuxt-content-starter.git
 ```
 ### Before development
+Make sure you have the following installed:
+- Nodejs
+- npm or yarn
 
-Follow [Doc](https://nuxt.com/docs/getting-started/installation#prerequisites)
+Follow [Doc](https://nuxt.com/docs/getting-started/installation#prerequisites).
+
 
 ### Install
 
@@ -70,4 +74,4 @@ Upload contents in `.output/public`
 
 ## License
 
-[MIT](https://github.com/connectshark/nuxt-content-starter/blob/main/LICENSE)
+This project is licensed under the [MIT](https://github.com/connectshark/nuxt-content-starter/blob/main/LICENSE).

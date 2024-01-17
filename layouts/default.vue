@@ -15,20 +15,21 @@
       </nav>
     </div>
   </header>
+  
+  <ClientOnly>
+    <h1 class="py-6 w-11/12 mx-auto text-balance col-start-2 font-bold text-4xl/loose text-center">{{ page.title }}</h1>
+  </ClientOnly>
   <div class="p-3 col-start-2 xl:col-start-3 xl:row-start-2" id="toc"></div>
   <main class="px-5 col-start-2 bg-white rounded shadow mb-10">
     <slot/>
   </main>
-  <footer class=" col-span-full border-t">
-    <div class="w-11/12 mx-auto xl:max-w-3xl py-10 text-center text-xs">
-      <p>Released under the MIT License.</p>
-      <p>Copyright<i class='bx bx-copyright'></i>2024 Chambers</p>
-    </div>
-  </footer>
+  <FooterWrapper/>
 </div>
 </template>
 
 <script setup>
+import FooterWrapper from '~/components/FooterWrapper.vue'
+const { page } = useContent()
 const navList = [
   {
     link: '/about',

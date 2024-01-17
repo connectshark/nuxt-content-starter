@@ -4,7 +4,7 @@
 <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
   <li v-for="article in list" :key="article._id">
   <NuxtLink :to="article._path" class="bg-white rounded-lg p-4 block hover:opacity-80">
-    <h3 class=" font-bold text-2xl leading-loose">{{ article.title }}</h3>
+    <h3 class="font-bold text-2xl leading-loose line-clamp-2">{{ article.title }}</h3>
     <p class="line-clamp-2 mb-4">{{ article.description }}</p>
   </NuxtLink>
   </li>

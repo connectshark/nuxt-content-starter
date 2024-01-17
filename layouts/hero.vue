@@ -17,7 +17,7 @@
 <main>
   <div class="w-11/12 max-w-7xl mx-auto">
     <h1 class="font-bold text-2xl/loose md:text-3xl/loose xl:text-5xl/loose py-10">
-      <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-violet-500">Nuxt Content Starter</span>
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-violet-500">{{ site.name }}</span>
       <p>The Easiest Way To Use</p>
     </h1>
   </div>
@@ -29,15 +29,11 @@
     <div v-html="fansPage"></div>
   </div>
 </section>
-<footer class="border-t">
-  <div class="w-11/12 mx-auto max-w-7xl py-10 text-center text-xs">
-    <p>Released under the MIT License.</p>
-    <p>Copyright<i class='bx bx-copyright'></i>2024 Chambers</p>
-  </div>
-</footer>
+<FooterWrapper/>
 </template>
   
 <script setup>
+import FooterWrapper from '~/components/FooterWrapper.vue'
 const { site } = useAppConfig()
 const navList = [
   {
