@@ -25,9 +25,8 @@
 <script setup>
 import usePagination from '~~/composables/usePagination'
 const { data } = await useAsyncData(
-  'home', () => queryContent().only(['title', 'description', '_path', '_id']).find()
+  'home', () => queryContent().only(['title', 'description', '_path', '_id', 'createAt']).sort().find()
 )
-
 const {
   list,
   isNextPage,
@@ -36,8 +35,12 @@ const {
   prevPage
 } = usePagination(data)
 
+const {
+  site
+} = useAppConfig()
+
 useHead({
-  title: 'Nuxt Content Starter'
+  title: site.name
 })
 
 definePageMeta({
