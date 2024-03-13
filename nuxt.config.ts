@@ -1,8 +1,13 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
-  nitro: { prerender: { routes: ['/sitemap.xml'] } },
+  devtools: { enabled: false },
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/seo'],
   experimental: { payloadExtraction: false },
+  site: {
+    url: 'https://nuxt-content-starter.onrender.com',
+    name: 'Nuxt Content Starter',
+    description: 'Welcome to my awesome site!',
+    defaultLocale: 'zh-TW'
+  },
   app: {
     rootId: 'app',
     head: {
