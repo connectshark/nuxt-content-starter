@@ -1,5 +1,7 @@
 # Nuxt Content Starter
 
+[![online demo](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/connectshark/nuxt-content-starter)
+
 This is a template for a blog using Nuxt and Content.
 
 ![](/readme/cover.png)
